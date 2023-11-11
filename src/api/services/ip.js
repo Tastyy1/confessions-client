@@ -3,8 +3,8 @@ import axios from "axios";
 
 const getIP = async () => {
   const ip = await axios
-    .get(`https://ip-api.com/json/`)
-    .then((res) => res.data.query)
+    .get(`https://ipapi.co/json`)
+    .then((res) => res.data.ip)
     .catch((err) => console.error(`${err.code}: - ${err.message}`));
   return ip;
 };
