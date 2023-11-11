@@ -9,4 +9,4 @@ const instance = axios.create({
   }/api`,
 }); 
 
-export default instance;
+export default instance; 
