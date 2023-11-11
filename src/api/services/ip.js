@@ -1,11 +1,12 @@
 /* eslint-disable no-undef */
 import axios from "axios";
 
+const isDev = import.meta.env?.DEV;
 
 const getIP = async () => {
   const ip = await axios
     .get(
-      `https://geolocation-db.com/json/`
+      `https://geolocation-db.com/json/${ip}`
     )
     .then((res) => res.data.IPv4)
     .catch((err) => console.error(`${err.code}: - ${err.message}`));
