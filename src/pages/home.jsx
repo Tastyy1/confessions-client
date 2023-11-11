@@ -44,14 +44,14 @@ export default function Home() {
           </Tab>
         </Tab.List>
 
-        <center><div className="flex justify-end p-4">
+        <div className="flex items-center justify-center p-4">
         <button
           onClick={handleRefresh}
-          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+          className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
         >
           Yenile
         </button>
-      </div></center>
+      </div>
 
         <Tab.Panels className="mt-2">
           <Tab.Panel className="rounded-xl focus:outline-none">
