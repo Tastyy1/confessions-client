@@ -24,6 +24,11 @@ export default function Home() {
     onError: handleError,
     enabled: selectedIndex === 1,
   });
+  
+  const handleRefresh = () => {
+    // Sayfa yenileme işlemini gerçekleştir
+    window.location.reload(true);
+  };
 
   return (
     <>
@@ -37,6 +42,16 @@ export default function Home() {
           <Tab className="w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700 ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2 ui-selected:bg-white ui-selected:shadow">
             Trending
           </Tab>
+
+          <div className="flex justify-end p-4">
+        <button
+          onClick={handleRefresh}
+          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+        >
+          Sayfayı Yenile
+        </button>
+      </div>
+      
         </Tab.List>
         <Tab.Panels className="mt-2">
           <Tab.Panel className="rounded-xl focus:outline-none">
