@@ -8,7 +8,7 @@ export default function ErrorFallback({ error, resetErrorBoundary }) {
 
       <div>
         <h1>Opps! Something went wrong</h1>
-        <h1>{error?.response?.data?.message}</h1>
+        <pre>{error?.response?.data?.message}</pre>
         <button onClick={resetErrorBoundary}>Try again</button>
       </div>
 
