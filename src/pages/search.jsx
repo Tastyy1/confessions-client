@@ -30,7 +30,7 @@ export default function Search() {
           htmlFor="default-search"
           className="sr-only mb-2 text-sm font-medium text-gray-900"
         >
-          Search
+          Ara
         </label>
         <div className="relative">
           <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
@@ -50,7 +50,7 @@ export default function Search() {
             className="absolute right-2.5 bottom-2.5 rounded-lg bg-blue-700 px-4 py-2 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300"
             onClick={handleSearch}
           >
-            Search
+            Ara
           </button>
         </div>
       </form>
@@ -64,7 +64,7 @@ export default function Search() {
           ) : (
             <div className="flex h-40 flex-col items-center justify-center space-y-4">
               <ExclamationTriangleIcon className="w-8 text-red-400" />
-              <p className="font-[500] text-gray-700">No results!</p>
+              <p className="font-[500] text-gray-700">Sonuç yok!</p>
             </div>
           )}
         </div>

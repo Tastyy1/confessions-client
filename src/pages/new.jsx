@@ -22,14 +22,14 @@ export default function New() {
     },
     onSuccess: () => {
       openAlert({
-        message: "Post created successfully!",
+        message: "Başarıyla gönderildi!",
         severity: "success",
       });
       navigate("/");
     },
     onError: (error) => {
       openAlert({
-        message: "Something went wrong!",
+        message: "Bir şeyler ters gitti!",
         severity: "error",
       });
       console.error(error.response.data);
@@ -42,14 +42,14 @@ export default function New() {
 
       <div className="space-y-6 p-4">
         <h1 className="text-center font-medium">
-          Share your secret with the world
+        Mesajlarınız tamamen anonimdir! 😊
         </h1>
         <Input
           value={postBody}
           onChange={setPostBody}
           onClick={() => mutation.mutate()}
-          label="Post"
-          placeholder="Your message..."
+          label="Gönder"
+          placeholder="Mesajın..."
           rows="10"
         />
       </div>
