@@ -281,7 +281,6 @@ export default function Post() {
         </button>
         <div style="width: 10px;"></div>
         <button
-          onClick="location.href='/';"
           className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
         >
           Geri Dön
