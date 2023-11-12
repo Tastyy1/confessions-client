@@ -15,7 +15,7 @@ export default function Custom404() {
       </div>
       <p className="my-8 text-center">
         <a href="/" className="underline">
-          Ana Sayfa
+          ANA SAYFA
         </a>
       </p>
       <Footer />

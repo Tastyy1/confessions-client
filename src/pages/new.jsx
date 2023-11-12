@@ -26,6 +26,7 @@ export default function New() {
         severity: "success",
       });
       navigate("/");
+      window.location.reload();
     },
     onError: (error) => {
       openAlert({
