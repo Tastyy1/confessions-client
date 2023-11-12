@@ -12,7 +12,7 @@ export default function Header() {
       <div className="flex items-center space-x-6">
         <Link to="/new" className="flex items-center">
           <PlusIcon className="h-6 w-6 cursor-pointer" />
-          <span className="text-base font-medium ml-1">Yeni</span>
+          <span className="text-base font-medium ml-1">Gönder</span>
         </Link>
 
         {/* Ayracı (|) eklenen kısım */}

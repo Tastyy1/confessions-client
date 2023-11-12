@@ -42,7 +42,7 @@ export default function New() {
 
       <div className="space-y-6 p-4">
         <h1 className="text-center font-medium">
-        🕵️ Mesajlarınız anonimdir.
+        🔒 Mesajlarınız anonimdir.
         </h1>
         <Input
           value={postBody}
