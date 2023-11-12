@@ -10,14 +10,18 @@ export default function Header() {
         </p>
       </Link>
       <div className="flex items-center space-x-6">
-        <Link to="/new">
+        <Link to="/new" className="flex items-center">
           <PlusIcon className="h-6 w-6 cursor-pointer" />
+          <span className="text-base font-medium ml-1">Yeni</span>
         </Link>
-        <div className="cursor-pointer rounded-full bg-slate-400/20 p-2 hover:bg-slate-400/30">
-          <Link to="/search">
-            <MagnifyingGlassIcon className="h-6 w-6" />
-          </Link>
-        </div>
+
+        {/* Ayracı (|) eklenen kısım */}
+        <span className="text-slate-400 mx-2">|</span>
+
+        <Link to="/search" className="flex items-center">
+          <MagnifyingGlassIcon className="h-6 w-6 cursor-pointer" />
+          <span className="text-base font-medium ml-1">Ara</span>
+        </Link>
       </div>
     </header>
   );
