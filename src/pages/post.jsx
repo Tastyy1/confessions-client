@@ -32,13 +32,7 @@ LinkifyCore.PluginManager.enableMention();
 LinkifyCore.PluginManager.enableHashtag();
 
 export default function Post() {
-  const handleReload = () => {
-    window.location.reload();
-  };
 
-  const handleGoBack = () => {
-    window.history.back();
-  };
   const generator = new AvatarGenerator();
 
   const { id } = useParams();
@@ -152,6 +146,13 @@ export default function Post() {
   });
 
 
+  const handleReload = () => {
+    window.location.reload();
+  };
+
+  const handleGoBack = () => {
+    window.history.back();
+  };
   return (
     <>
       <Header />
@@ -277,7 +278,7 @@ export default function Post() {
 
             <div className="flex items-center justify-center p-4">
         <button
-          onClick={handleRefresh}
+          onClick={handleReload}
           className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
         >
           Yenile
