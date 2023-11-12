@@ -5,7 +5,7 @@ export default function Footer() {
 
   return (
     <footer className="p-4 text-center">
-      &copy; {year} | Developed with{" "}
+      &copy; {year} | 
       <HeartIcon className="inline w-5 text-rose-500" />
     </footer>
   );

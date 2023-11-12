@@ -130,14 +130,14 @@ export default function Post() {
     },
     onSuccess: () => {
       openAlert({
-        message: "Comment posted successfully!",
+        message: "Yorum başarıyla gönderildi!",
         severity: "success",
       });
       queryClient.invalidateQueries(["comments", id]);
     },
     onError: (error) => {
       openAlert({
-        message: "Something went wrong!",
+        message: "Bir şeyler ters gitti!",
         severity: "error",
       });
       console.error(error.response.data);
@@ -246,9 +246,9 @@ export default function Post() {
               <ChatBubbleOvalLeftEllipsisIcon className="w-5 cursor-pointer" />
               <RWebShare
                 data={{
-                  text: `Share - Confessions | ${post.data.name}`,
+                  text: `vSohbet | ${post.data.name}`,
                   url: `${window.location.origin}/posts/${post.data._id}`,
-                  title: "Confessions",
+                  title: "vSohbet",
                 }}
                 onClick={() => console.log("shared successfully!")}
               >
@@ -260,14 +260,14 @@ export default function Post() {
                 value={commentBody}
                 onChange={setCommentBody}
                 onClick={() => mutation.mutate()}
-                label="Comment"
-                placeholder="Add your comment..."
+                label="Yorum"
+                placeholder="Yorumunu ekle..."
                 rows={3}
               />
             </div>
 
             <div
-              data-before-content="All Comments"
+              data-before-content="Tüm Yorumlar"
               className="flex flex-col space-y-3 divide-y-2 p-6 before:mb-2 before:border-b-2 before:border-gray-300 before:pb-2 before:text-lg before:font-semibold before:content-[attr(data-before-content)]"
             >
               {comments.data.length > 0 ? (
@@ -277,9 +277,9 @@ export default function Post() {
               ) : (
                 <div className="flex h-40 flex-col items-center justify-center space-y-4">
                   <ChatBubbleLeftRightIcon className="w-8 text-red-400" />
-                  <p className="font-[500] text-gray-700">No Comments Yet!</p>
+                  <p className="font-[500] text-gray-700">Henüz Yorum Yok!</p>
                   <p className="text-gray-600">
-                    Be the first to share what you think!
+                  Ne düşündüğünüzü ilk paylaşan siz olun!
                   </p>
                 </div>
               )}

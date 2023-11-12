@@ -54,7 +54,7 @@ export default function Report({ id, postReported, setPostReported }) {
                 <FlagIcon className="w-5 text-gray-500 group-hover:text-white" />
               )}
               <span className="group-hover:text-white">
-                {postReported.reported ? "Reported" : "Report"}
+                {postReported.reported ? "Şikayet Edildi" : "Şikayet Et"}
               </span>
             </button>
           </div>

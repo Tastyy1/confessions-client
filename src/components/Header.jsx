@@ -6,7 +6,7 @@ export default function Header() {
     <header className="sticky top-0 flex items-center justify-between bg-white/50 p-4 backdrop-blur">
       <Link to="/">
         <p className="select-none font-dynaPuff text-2xl font-medium">
-          Confessions
+          vSohbet
         </p>
       </Link>
       <div className="flex items-center space-x-6">

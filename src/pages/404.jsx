@@ -11,12 +11,11 @@ export default function Custom404() {
         <p className="font-sourceCodePro text-9xl font-semibold tracking-wider sm:tracking-widest">
           404
         </p>
-        <p className="font-medium">Didn&apos;t find anything here!</p>
+        <p className="font-medium">Oh hayır! Aradığınız sayfayı bulamadık, ama endişelenmeyin, birlikte yeni bir yola çıkabiliriz. 🌟</p>
       </div>
       <p className="my-8 text-center">
-        Back to{" "}
         <a href="/" className="underline">
-          home
+          Ana Sayfa
         </a>
       </p>
       <Footer />

@@ -188,9 +188,9 @@ export default function Card({ post }) {
           />
           <RWebShare
             data={{
-              text: `Share - Confessions | ${post.name}`,
+              text: `vSohbet | ${post.name}`,
               url: `${window.location.origin}/posts/${post._id}`,
-              title: "Confessions",
+              title: "vSohbet",
             }}
             onClick={() => console.log("shared successfully!")}
           >
