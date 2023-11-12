@@ -151,7 +151,7 @@ export default function Post() {
 
   const handleBack = () => {
     // Sayfa yenileme işlemini gerçekleştir
-    history.back(true);
+    history.back();
   };
 
   return (
