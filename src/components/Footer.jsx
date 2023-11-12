@@ -6,15 +6,7 @@ export default function Footer() {
   return (
     <footer className="p-4 text-center">
       &copy; {year} | Developed with{" "}
-      <HeartIcon className="inline w-5 text-rose-500" /> by{" "}
-      <a
-        className="underline"
-        href="https://github.com/dividee-conquer"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Divide-Conquer
-      </a>
+      <HeartIcon className="inline w-5 text-rose-500" />
     </footer>
   );
 }
