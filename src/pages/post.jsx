@@ -146,10 +146,6 @@ export default function Post() {
   });
 
 
-  const handleReload = () => {
-    window.location.reload();
-  };
-
 
   return (
     <>
@@ -276,7 +272,6 @@ export default function Post() {
 
             <div className="flex items-center justify-center p-4">
         <button
-          onClick={handleReload}
           className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
         >
           Yenile
