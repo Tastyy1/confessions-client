@@ -144,6 +144,16 @@ export default function Post() {
     },
   });
 
+  const handleRefresh = () => {
+    // Sayfa yenileme işlemini gerçekleştir
+    window.location.reload(true);
+  };
+
+  const handleBack = () => {
+    // Sayfa yenileme işlemini gerçekleştir
+    history.back(true);
+  };
+
   return (
     <>
       <Header />
@@ -260,11 +270,29 @@ export default function Post() {
                 value={commentBody}
                 onChange={setCommentBody}
                 onClick={() => mutation.mutate()}
-                label="Yorum"
+                label="Gönder"
                 placeholder="Yorumunu ekle..."
                 rows={3}
               />
             </div>
+
+
+            <div className="flex items-center justify-center p-4">
+        <button
+          onClick={handleRefresh}
+          className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+        >
+          Yenile
+        </button>
+        <div style="width: 10px;"></div>
+        <button
+          onClick={handleBack}
+          className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+        >
+          Geri Dön
+        </button>
+      </div>
+
 
             <div
               data-before-content="Tüm Yorumlar"
