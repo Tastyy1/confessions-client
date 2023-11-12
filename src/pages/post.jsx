@@ -270,21 +270,6 @@ export default function Post() {
             </div>
 
 
-            <div className="flex items-center justify-center p-4">
-        <button
-          className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
-        >
-          Yenile
-        </button>
-        <div style="width: 10px;"></div>
-        <button
-          className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
-        >
-          Geri Dön
-        </button>
-      </div>
-
-
             <div
               data-before-content="Tüm Yorumlar"
               className="flex flex-col space-y-3 divide-y-2 p-6 before:mb-2 before:border-b-2 before:border-gray-300 before:pb-2 before:text-lg before:font-semibold before:content-[attr(data-before-content)]"
