@@ -6,7 +6,7 @@ const getAllPosts = () => {
 };
 
 const getTrendingPosts = () => {
-  return axios.get("/posts?sort=engagement").then((res) => res.data);
+  return axios.get("/posts?sort=count.likes").then((res) => res.data);
 };
 
 const getPost = (id) => {

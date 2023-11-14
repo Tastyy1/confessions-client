@@ -131,7 +131,7 @@ export default function Post() {
     },
     onSuccess: () => {
       openAlert({
-        message: "Yorum başarıyla gönderildi!",
+        message: "Yorum başarıyla gönderildi! Lütfen sayfayı yenileyin.",
         severity: "success",
       });
       queryClient.invalidateQueries(["comments", id]);
