@@ -13,7 +13,7 @@ export default function ErrorFallback({ error, resetErrorBoundary }) {
 
       <div>
         <h1>Opps! Bir şeyler ters gitti!</h1>
-        <h1>{error?.response?.data?.message}</h1>
+        <pre>{error?.response?.data?.message}</pre>
         <button className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600" onClick={resetErrorBoundary}>TEKRAR DENE</button>
       </div>
 
