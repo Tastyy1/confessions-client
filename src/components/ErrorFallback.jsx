@@ -7,9 +7,9 @@ export default function ErrorFallback({ error, resetErrorBoundary }) {
       <Header />
 
       <div>
-        <h1>Opps! Bir şeyler ters gitti veya erişiminiz engellendi. Eğer yardıma ihtiyacınız varsa, lütfen iletişime geçin.</h1>
-        <pre>{error?.response?.data?.message}</pre>
-        <button onClick={resetErrorBoundary}>TEKRAR DENE</button>
+        <h1>Opps! Bir şeyler ters gitti!</h1>
+        <h1>{error?.response?.data?.message}</h1>
+        <button className="px-6 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600" onClick={resetErrorBoundary}>TEKRAR DENE</button>
       </div>
 
       <Footer />
