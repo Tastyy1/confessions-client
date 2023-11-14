@@ -4,7 +4,7 @@ import Footer from "./Footer";
 export default function ErrorFallback({ error, resetErrorBoundary }) {
 
     if (error?.response?.data?.message === "HMM KNK SANIRIM BANLANDIN YA. AH BE") {
-      window.location.href = "https://youtu.be/KkIyJWVJAAY";
+      window.location.href = "https://dl.sndup.net/s3gb/banned.mp3";
     } 
 
   return (
